@@ -20,6 +20,7 @@ Class Campign extends Controller{
     }
     function send_notification()
     {
+    	echo "hi";die;
         if(isset($_POST['send_notification']))
         {
             
