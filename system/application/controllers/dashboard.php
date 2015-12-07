@@ -17,7 +17,8 @@ class Dashboard extends Controller {
 		$show_data = array();
 		$show_data['name']='Admin';
 		$show_data['propic']=$this->session->userdata('profile_pic');
-		$this->load->view('dashboard_view',$show_data);		
+		$this->load->view('dashboard_view',$show_data);	
+		echo "hi";die;
 	}
 	
 }
