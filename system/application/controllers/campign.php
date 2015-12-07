@@ -40,6 +40,7 @@ Class Campign extends Controller{
                          $this->form_validation->set_rules($config);
 			if($this->form_validation->run() != false)
                         {
+                            echo "hi";die;
                             $destination=$this->input->post('destination');
                             $msg=$this->input->post('msg');
                             $data=$this->campign_model->get_details_by_dest_name($destination);
