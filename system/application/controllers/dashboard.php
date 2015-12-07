@@ -14,6 +14,7 @@ class Dashboard extends Controller {
 	
 	function index()
 	{
+		echo "hi";die;
 		$show_data = array();
 		$show_data['name']='Admin';
 		$show_data['propic']=$this->session->userdata('profile_pic');
